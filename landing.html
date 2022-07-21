@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>mainpage</title>
+</head>
+
+<style>
+    #container{
+        background-color: black;
+    }
+    #navbar{
+        width:99%;
+        display: grid;
+        padding-top: 10px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,50px);
+    }
+    #navbar>img{
+        width: 60%;
+        padding-left:100px;
+        margin: auto;
+        padding-right: 100px;
+    }
+
+    #navbar1{
+        padding-left: 800px;
+        
+    }
+    #navbar1>div{
+        margin-left: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: (1,100px);
+    }
+
+    #navbar1>div>div{
+        padding-left: 100px;
+        padding-top: 10px;
+        font-size: 20px;
+        
+    }
+    #navlink1>a{
+        color: white;
+        text-decoration: none;
+
+    }
+    #navlink2>a{
+        color: white;
+        text-decoration: none;
+
+    }
+
+    #topmain{
+      
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto);
+        background-color: black;
+    }
+    #topmain>img{
+        width: 100%;
+
+    }
+
+    #topmain>div{
+        color: white;
+        padding-left: 80px;
+        padding-top: 100px;
+    }
+    #topmain1>P{
+        font-style: unset;
+        font-size: 20px;
+        color: azure;
+    }
+    #topmain1>h1{
+        font-style: normal;
+        font-size: 35px;
+    }
+    #topmain1>h1+p{
+        font-style: normal;
+        font-size: 22px;
+        color: azure;
+    }
+
+    #topmain2{
+        background-color: white;
+        width: 48%;
+        border: 1 px solid white;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-top: 1px;
+    }
+
+    #topmain2>h3{
+        color: black;
+       
+        
+    }
+    #selectCity{
+        width: 95%;
+        color: black;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+</style>
+<body>
+    
+<div id="container">
+
+<div id="navbar">
+    <img src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"/>
+    <div id="navbar1">
+        <div id="navbar2">
+            <div id="navlink1"><a href="blog.html">Blog</a></div>
+            <div id="navlink2"><a href="singIn">Login/signup</a></div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="topmain">
+    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_19be5040.jpeg"/>
+    <div id="topmain1">
+        <P>URBAN COMPANY</P>
+        <h1>Quality home services,on demand</h1>
+        <P>Experienced,hand-picked Professional to serve at your doorstep</P>
+        <div id="topmain2">
+            <h3>Where do you need a service?</h3>
+            <select id="selectCity">
+                <option value="">Select your city</option>
+                <option value="Pune">Pune</option>
+                <option value="Aurangabad">Aurangabad</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Nashik">Nashik</option>
+                <option value="Solapur">Solapur</option>
+        </div>
+        
+    </div>
+
+</div>
+</body>
+
+</html>
