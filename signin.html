@@ -7,15 +7,18 @@
 <style>
     #container{
         margin: auto;
-        width: 50%;
+        width: 40%;
         margin-top: auto;
         text-align: center;
         margin-top: 100px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 500px;
+        padding-top: 30px;
     }
 
     #cont1{
-        width: 40%;
-        border: 1px solid black;
+        width: 50%;
+     
         display: grid;
         margin: auto;
         grid-template-columns: repeat(2,1fr);
@@ -23,7 +26,7 @@
     }
 
     #cont2{
-        width:80%;
+        width:90%;
         border: 1px solid black;
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -31,11 +34,12 @@
 
     #cont2>img{
         margin-top: 7px;
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: 5px;
+        padding-top: -5px;
     }
 
     #cont2>span{
@@ -49,15 +53,29 @@
 
     #mobile{
 
-        border: 0px;
+        border: 1px solid black;
+        margin-left: -30px;
 
+    }
+
+    form>h2{
+        margin-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    #button1{
+        margin: auto;
+        width: 40%;
+        margin-top: 20px;
+        background-color: black;
+        font-size: 25px;
+        border-radius: 10px;
+        color: white;
+        padding: 10px 0px;
     }
    
 
     
-   
-
-
      
 
 </style>
@@ -71,20 +89,33 @@
                 <img src="https://images.urbanclap.com/image/upload//t_medium_res_template/v1514444369/Flag_of_India_28Dec2017-1.png"/> 
                 <span>+91</span>
             </div>
-            <input id="mobile"type="number" placeholder="Enter Mobile No" />
+            <input id="mobile"type="number" placeholder="Enter Mobile No" value=""/>
         </div>
-      
-        
-        </form>
-        
-            
+        <div id="button1">
+            <botton id="enter1" >continue</botton>
+        </div>
+        </form> 
         </div>
     </div>
-    
-
 </body>  
-
-
-
-
 </html>
+
+<script>
+     
+     let ent= document.querySelector("#enter1")
+
+    ent.addEventListener("click",myEnter)
+      
+    function myEnter(event){
+        event.preventDefault()
+       let obj={
+            mobile:document.querySelector("#mobile").value
+
+    }
+    if(obj.mobile==""){
+         alert("Enter Mobile Number")
+    }else{
+        window.location.href="enterOtp.html"
+    }
+}
+    </script>

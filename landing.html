@@ -58,6 +58,7 @@
     }
     #topmain>img{
         width: 100%;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(148, 144, 144, 0.8) -6px -2px 16px 0px;
 
     }
 
@@ -92,8 +93,6 @@
 
     #topmain2>h3{
         color: black;
-       
-        
     }
     #selectCity{
         width: 95%;
@@ -103,8 +102,122 @@
         font-size: 16px;
         margin-bottom: 30px;
     }
+    #topSecond{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto) ;  
+        margin: auto;
+        margin-top: 100px;
 
+    }
+    .imgDet1{       
+    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto) ;
+    }
+    .imgDet1>div{
 
+        margin-left: -200px; 
+        padding-top: -15px;
+        margin-bottom: 30px;   
+    }   
+    .imgDet1>img{  
+        width: 30%;    
+    }
+    #topSecond2{
+        background-color: rgb(233, 240, 243);
+        width: 85%;
+        height: 80%;
+        padding-left: 50px;
+    }
+    #topSecond2>img{
+        width: 20%;
+        margin: 70px;
+        margin-left: -10px;
+        
+    }
+    #topSecond2>h1{
+        margin-top: -50px;
+        font-size: 40px; 
+    }
+    #topSecond2>p{
+       
+        font-size: 25px; 
+    }
+
+    #mainmid{
+        width: 99%;
+        height: 500px;
+        margin: auto;
+       margin-top: 30px;
+       font-size: 20px; 
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+       display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto) ;
+        padding-left: 170px;
+   }
+   #mainmid1{
+    width: 60%;
+    
+
+   }
+   #cont1{
+    width: 100%;
+    display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto) ;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        
+   }
+
+   #cont2{
+    display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto) ;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   }
+
+   #cont2>button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+   }
+
+   #cont3{
+    display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,auto) ;
+        margin-top: 40px;
+        
+   }
+   #cont3>img{
+        width: 50%;
+   }
+   #cont3>img+img{
+        margin-left: -100px;
+   }
+
+   #mainmid2>img{
+    position:relative;
+    width:250px;
+    height: 450px;
+    top:10px;
+    left: -150px;
+        
+   }
+
+   #mainmid2>img+img{
+    position:relative;
+    width:250px;
+    height: 450px;
+    top:10px;
+    left: -50px;
+        
+    }
 
 
 
@@ -119,13 +232,14 @@
     <div id="navbar1">
         <div id="navbar2">
             <div id="navlink1"><a href="blog.html">Blog</a></div>
-            <div id="navlink2"><a href="singIn">Login/signup</a></div>
+            <div id="navlink2"><a href="signin.html">Login/signup</a></div>
         </div>
     </div>
 </div>
 </div>
 
 <div id="topmain">
+    
     <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_19be5040.jpeg"/>
     <div id="topmain1">
         <P>URBAN COMPANY</P>
@@ -140,11 +254,73 @@
                 <option value="Mumbai">Mumbai</option>
                 <option value="Nashik">Nashik</option>
                 <option value="Solapur">Solapur</option>
+            </select>
         </div>
-        
     </div>
 
 </div>
+
+<div id="topSecond">
+    <div id="topSecond1">
+        <h1>Why Urban Company?</h1>
+        <div class="imgDet1">
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_29614d40.png"/>
+            <div>
+                <h3>Transportation Pricing</h3>
+                <p>See fixed prices before you book No hidden charges.</p>
+            </div>
+        </div>
+        <div class="imgDet1">
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_2cc7d0d0.png"/>
+            <div>
+                <h3>Experts only</h3>
+                <p>our professional are well trained and have on-job expertise.</p>
+            </div>
+        </div>
+        <div class="imgDet1">
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_2caafa00.png"/>
+            <div>
+                <h3>Fully Equipped</h3>
+                <p>We bring everything needed to get to get job done well.</p>
+            </div>
+        </div>
+    </div>
+    <div id="topSecond2">
+        <img src="https://res.cloudinary.com/urbanclap/image/upload/q_20,f_auto/categories/category_v2/category_cb4d9130.png"/>
+
+        <h1> 100% Quality Assured</h1>
+        <p> if you don't love our service ,we will make it right.</p>
+    </div>
+
+</div>
+<div id="mainmid" >
+    <div id="mainmid1">
+        <h2>Book professional from your phone</h2>
+        <P>Enter Your mobile number to get the App download link.</P>
+        <div id="cont1">
+            <div id="cont2">
+                <input id="mobile"type="number" placeholder="Enter Mobile No" value=""/>
+                <button>Send</button>
+            </div>   
+        </div>
+        <div id="cont3">
+            <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f907eb0.png"/>
+            <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f741d10.png"/>
+        </div>
+    </div>
+    <div id="mainmid2">
+        <img src="https://res.cloudinary.com/urbanclap/image/upload/w_300,f_auto/categories/category_v2/category_2d7045d0.png"/>
+        <img src="https://res.cloudinary.com/urbanclap/image/upload/w_350,f_auto/categories/category_v2/category_2d013050.png"/>
+    </div>
+
+</div>
+
 </body>
 
 </html>
+<script>
+   
+   
+   
+</script>
+
