@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>EnterOtp</title>
+
+</head>
+
+<style>
+    #container{
+        margin: auto;
+        width: 40%;
+        margin-top: auto;
+        text-align: center;
+        margin-top: 100px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 500px;
+        padding-top: 30px;
+    }
+
+    #cont1{
+        width: 50%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,50px);
+    }
+
+    #mobile{
+
+        border: 1px solid black;
+        margin-left: -30px;
+
+    }
+
+    form>h2{
+        margin-top: 12px;
+        padding-bottom: 50px;
+    }
+    form>p{
+        width: 30%;
+        margin: auto;
+    }
+
+    #button1{
+        margin: auto;
+        width: 40%;
+        margin-top: 20px;
+        background-color: black;
+        font-size: 25px;
+        border-radius: 10px;
+        color: white;
+        padding: 10px 0px;
+    }
+    form>div{
+        width: 100%;
+        margin-top: 10px;
+    }
+    #otp{
+        padding: 5px 10px;
+    }
+
+   
+    
+   
+
+    
+     
+
+</style>
+
+<body>
+    <div id="container">
+        <form>
+            <h2>Please login to continue</h2>
+            <h3>Enter verification code</h3>
+            <P>we have sent you a four digit OTP on your mobile number</P>
+            <div><input id="otp" type="number" placeholder="enter OTP" value=""/></div>
+
+        <div id="button1">
+            <botton id="enter1" >Login</botton>
+        </div>
+        </form> 
+        </div>
+    </div>
+</body>  
+</html>
+
+<script>
+     
+    let ent= document.querySelector("#enter1")
+
+   ent.addEventListener("click",myOtp)
+     
+   function myOtp(event){
+       event.preventDefault()
+      let obj={
+           otp:document.querySelector("#otp").value
+
+   }
+   if(obj.otp==""){
+        alert("Enter OTP")
+   }else{
+       window.location.href="landing.html"
+   }
+}
+   </script>
