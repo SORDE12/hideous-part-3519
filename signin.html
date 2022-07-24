@@ -14,53 +14,40 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         height: 500px;
         padding-top: 30px;
+        border-radius: 10px;
     }
 
     #cont1{
         width: 50%;
-     
+      
         display: grid;
         margin: auto;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(1,50px);
     }
 
-    #cont2{
-        width:90%;
-        border: 1px solid black;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    #cont2>img{
-        margin-top: 7px;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 5px;
-        padding-top: -5px;
-    }
-
-    #cont2>span{
-       
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-    
-    }
 
     #mobile{
 
         border: 1px solid black;
-        margin-left: -30px;
-
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 15px;
+     
     }
 
     form>h2{
         margin-top: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
+    }
+    
+    form>img{
+        margin: auto;
+       background-color: black;
+       padding: 5px 5px;
+       width: 30%;
+       margin-bottom: 50px;
     }
 
     #button1{
@@ -83,12 +70,9 @@
 <body>
     <div id="container">
         <form>
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png"/>
             <h2>Please login to continue</h2>
         <div id="cont1">
-            <div id="cont2">
-                <img src="https://images.urbanclap.com/image/upload//t_medium_res_template/v1514444369/Flag_of_India_28Dec2017-1.png"/> 
-                <span>+91</span>
-            </div>
             <input id="mobile"type="number" placeholder="Enter Mobile No" value=""/>
         </div>
         <div id="button1">
